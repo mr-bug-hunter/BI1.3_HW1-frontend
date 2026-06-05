@@ -1,6 +1,6 @@
 import './App.css'
-import BooksForm from './components/booksForm'
-import Response from "./components/response"
+import BooksForm from './components/BooksForm'
+import Response from "./components/Response"
 
 export default function App(){
   return (
