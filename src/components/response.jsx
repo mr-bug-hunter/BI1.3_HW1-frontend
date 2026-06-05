@@ -1,7 +1,7 @@
 import { useState } from "react"
 import useFetch from "../useFetch"
 
-const addBooks = ()=>{
+const AddBooks = ()=>{
     const [successMessage, setSuccessMessage] = useState("")
     const {data, loading, error}= useFetch("https://be-4-assignment1-bi13hw1.vercel.app/books")
 
@@ -36,4 +36,4 @@ const addBooks = ()=>{
     )
 }
 
-export default addBooks
+export default AddBooks
