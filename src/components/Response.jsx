@@ -9,7 +9,7 @@ const AddBooks = ()=>{
 
     const handleDelete = async (bookId)=>{
         try{
-            const response = await fetch(`https://be-4-assignment1-bi13hw1.vercel.app/${bookId}`, 
+            const response = await fetch(`https://be-4-assignment1-bi13hw1.vercel.app/books/${bookId}`, 
                 {method : "DELETE"},
             )
             if(!response.ok){
