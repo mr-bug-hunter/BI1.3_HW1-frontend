@@ -33,7 +33,8 @@ const AddBooks = ()=>{
             {data?.book?.map((book)=>(
                 <h2 key={book._id}>{book.title}{" "} <button onClick={()=> handleDelete(book._id)}>Delete</button> </h2>
             ))}
-            <hr /><br />{successMessage}
+            {successMessage}
+            <hr /><br />
         </div>
     )
 }
