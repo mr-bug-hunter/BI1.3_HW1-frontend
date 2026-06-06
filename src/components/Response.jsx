@@ -26,9 +26,9 @@ const AddBooks = ()=>{
     }
     return (
         <div>
-            {loading && <p>Loading please wait...</p>}
             <br /><hr />
             <h2>The Title of Book List </h2>
+            {loading && <p>Loading please wait to load the data ...</p>}
             <hr />
             {data?.book?.map((book)=>(
                 <h2 key={book._id}>{book.title}{" "} <button onClick={()=> handleDelete(book._id)}>Delete</button> </h2>
