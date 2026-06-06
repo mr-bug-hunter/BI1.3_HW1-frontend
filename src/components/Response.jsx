@@ -17,7 +17,7 @@ const AddBooks = ()=>{
             }
             const data = await response.json()
             if(data){
-                setSuccessMessage("Book Delted Successfully")
+                setSuccessMessage("Book Deleted Successfully")
                 window.location.reload() // this will reload page when delete the Movie.
             }
         }catch(error){
@@ -33,7 +33,7 @@ const AddBooks = ()=>{
             {data?.book?.map((book)=>(
                 <h2 key={book._id}>{book.title}{" "} <button onClick={()=> handleDelete(book._id)}>Delete</button> </h2>
             ))}
-            <hr /><br />
+            <hr /><br />{successMessage}
         </div>
     )
 }
