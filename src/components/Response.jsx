@@ -31,9 +31,9 @@ const AddBooks = ()=>{
             {loading && <p>Loading please wait to load the data ...</p>}
             <hr />
             {data?.book?.map((book)=>(
-                <h2 key={book._id}>{book.title}{" "} <button onClick={()=> handleDelete(book._id)}>Delete</button> </h2>
+                <h2 key={book._id}>{book.title}{" "} <button onClick={()=> handleDelete(book._id)}>Delete</button> {successMessage} </h2>
             ))}
-            {successMessage}
+            
             <hr /><br />
         </div>
     )
