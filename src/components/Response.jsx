@@ -25,7 +25,9 @@ const AddBooks = ()=>{
         }
     }
     return (
-        <div> <br /><hr />
+        <div>
+            {loading && <p>Loading please wait...</p>}
+            <br /><hr />
             <h2>The Title of Book List </h2>
             <hr />
             {data?.book?.map((book)=>(
